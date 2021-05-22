@@ -1,0 +1,83 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: coral;
+}
+
+.outer-container {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  right: 50%;
+  min-width: 350px;
+  height: 70vh;
+  border-radius: 3px;
+  padding: 5px;
+  background-color: #fff;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.outer-container .inner-container {
+  position: absolute;
+  top: -15px;
+  background-color: cornsilk;
+  width: 330px;
+  height: 100%;
+  border-radius: 3px;
+  padding: 5px;
+  left: 10px;
+  -webkit-box-shadow: 0 0 2px 0px #000;
+          box-shadow: 0 0 2px 0px #000;
+  text-align: center;
+}
+
+.outer-container .fa {
+  color: coral;
+}
+
+.outer-container button {
+  background-color: coral;
+  color: #fff;
+  outline: 0;
+  border: 0;
+  display: block;
+  margin: 10px auto;
+  padding: 10px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.outer-container #name, .outer-container #number {
+  width: 100%;
+  padding: 5x 10px;
+  height: 30px;
+  margin: 5px 0;
+  border-radius: 50px;
+  border-color: #080808;
+  outline: 0;
+}
+
+.outer-container .list {
+  background-color: #fff;
+  padding: 5px 0px;
+  -webkit-box-shadow: 0px 2px 3px 0 #000;
+          box-shadow: 0px 2px 3px 0 #000;
+}
+
+.outer-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.outer-container ul li {
+  list-style: none;
+}
+/*# sourceMappingURL=style.css.map */
