@@ -65,7 +65,7 @@ body{
     .list{
         background-color: #fff;
         padding: 0 15px 10px;
-    box-shadow: 0px 4px 6px 3px #5555556e;
+    // box-shadow: 0px 4px 6px 3px #5555556e;
         overflow-y: scroll;
         max-height: 225px;
         border-radius: 8px;
@@ -91,6 +91,9 @@ body{
     background: #555;
   }
     }
+    // ul:parent(.list) {
+    // box-shadow: 0px 4px 6px 3px #5555556e;
+    // }
     ul{
         display: flex;
         justify-content: space-between; 

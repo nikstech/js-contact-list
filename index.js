@@ -13,9 +13,18 @@ for(let i=0; i< contacts.length; i++){
         <li><i class="fa fa-plus" onClick="deletecont('${contacts[i].id}')"></i></li>
     </ul> 
         `   
-    }
-   
+    }   
 document.getElementsByClassName("list")[0].innerHTML = result;  
+
+if(contacts.length != 0){
+ let myadd = document.getElementsByClassName("list");
+    // myadd.setAttribute("style","padding:50px");
+    myadd.classList.add("boxShadow");
+ // aa.style.padding = "0px 4px 6px 3px #5555556e"
+// aa.style.padding = "25px"
+// console.log(aa);
+
+}
 
 function submit_contact(e){
         e.preventDefault();
