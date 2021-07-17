@@ -10,7 +10,7 @@ for(let i=0; i< contacts.length; i++){
     <ul> 
         <li><i class="fa fa-user"></i></li>
         <li style="min-width:200px;text-transform: capitalize;"><span class="name">${contacts[i].name}</span><br><span class="number">${contacts[i].number}</span></li>
-        <li><i class="fa fa-plus" onClick="deletecont('${contacts[i].id}')"></i></li>
+        <li><i class="fa fa-plus" onClick="deletecont('${contacts[i].id}')" style="cursor:pointer"></i></li>
     </ul> 
         `   
     }   
@@ -69,9 +69,14 @@ function submit_contact(e){
                 element[i].classList.add('boxShadow');
                 console.log(element[i].className);
             }
-           // myadd.classList.remove("list");
-        // aa.style.padding = "0px 4px 6px 3px #5555556e"
-       // aa.style.padding = "25px"
-       // console.log(aa);
-       
+       }
+
+       if(contacts.length > 2){
+        var element = document.getElementsByClassName("list");
+        // Iterate through the retrieved elements and add the necessary class names.
+            for(var i = 0; i < element.length; i++)
+            {
+                element[i].setAttribute("style","overflow-y:scroll;padding-top:0");
+                console.log(element[i].className);
+            }
        }

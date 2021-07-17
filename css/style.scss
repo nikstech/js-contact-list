@@ -64,9 +64,9 @@ body{
     }
     .list{
         background-color: #fff;
-        padding: 0 15px 10px;
+        padding: 1px 15px 10px;
     // box-shadow: 0px 4px 6px 3px #5555556e;
-        overflow-y: scroll;
+        // overflow-y: scroll;
         max-height: 225px;
         border-radius: 8px;
         &.boxShadow{
@@ -115,6 +115,11 @@ body{
             font-size: 22px;
             &.fa-plus{
                 transform: rotate(43deg); 
+                border-radius: 25px;
+                padding: 5px;
+                cursor: pointer;            
+                font-size: 15px;
+                box-shadow: 3px 2px 6px 0 rgb(85 85 85 / 43%);
             }
         }
       }  
