@@ -16,15 +16,7 @@ for(let i=0; i< contacts.length; i++){
     }   
 document.getElementsByClassName("list")[0].innerHTML = result;  
 
-if(contacts.length != 0){
- let myadd = document.getElementsByClassName("list");
-    // myadd.setAttribute("style","padding:50px");
-    myadd.classList.add("boxShadow");
- // aa.style.padding = "0px 4px 6px 3px #5555556e"
-// aa.style.padding = "25px"
-// console.log(aa);
 
-}
 
 function submit_contact(e){
         e.preventDefault();
@@ -69,3 +61,17 @@ function submit_contact(e){
         localStorage.setItem("contacts",JSON.stringify(contacts))
         location.reload();
     }
+    if(contacts.length != 0){
+        var element = document.getElementsByClassName("list");
+        // Iterate through the retrieved elements and add the necessary class names.
+            for(var i = 0; i < element.length; i++)
+            {
+                element[i].classList.add('boxShadow');
+                console.log(element[i].className);
+            }
+           // myadd.classList.remove("list");
+        // aa.style.padding = "0px 4px 6px 3px #5555556e"
+       // aa.style.padding = "25px"
+       // console.log(aa);
+       
+       }
