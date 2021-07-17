@@ -120,6 +120,11 @@ body {
   padding: 0 15px 15px;
 }
 
+.outer-container ul:last-child {
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
 .outer-container ul li {
   list-style: none;
 }
@@ -131,5 +136,15 @@ body {
 .outer-container ul li .fa.fa-plus {
   -webkit-transform: rotate(43deg);
           transform: rotate(43deg);
+}
+
+@media screen and (max-width: 450px) {
+  .outer-container {
+    min-width: auto;
+    left: 0;
+    right: 0;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
 }
 /*# sourceMappingURL=style.css.map */

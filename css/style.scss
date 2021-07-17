@@ -99,8 +99,10 @@ body{
     border-bottom: 1px solid lightgray;
     padding-bottom: 10px;
     padding: 0 15px 15px;
-        
-
+    &:last-child{
+        margin-bottom: 0;
+        border-bottom: 0;
+    }
       li{
         list-style: none;
         .fa{
@@ -112,4 +114,13 @@ body{
       }  
     }
     
+}
+
+@media screen and (max-width: 450px) {
+    .outer-container{
+        min-width: auto;
+    left: 0;
+    right: 0;
+    transform: translate(0);
+    }
 }
