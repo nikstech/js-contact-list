@@ -1,22 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;1,400&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 body {
-  background-color: coral;
+  background-color: #f5f5dc;
+  font-family: 'Poppins', sans-serif;
 }
 
 .outer-container {
   position: absolute;
-  top: 20%;
+  top: 100px;
   left: 50%;
   right: 50%;
-  min-width: 350px;
+  min-width: 450px;
   height: 70vh;
   border-radius: 3px;
   padding: 5px;
-  background-color: #fff;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
 }
@@ -24,15 +25,25 @@ body {
 .outer-container .inner-container {
   position: absolute;
   top: -15px;
-  background-color: cornsilk;
-  width: 330px;
+  background-color: #fff;
+  width: 450px;
   height: 100%;
-  border-radius: 3px;
-  padding: 5px;
+  border-radius: 8px;
+  padding: 20px 15px;
   left: 10px;
-  -webkit-box-shadow: 0 0 2px 0px #000;
-          box-shadow: 0 0 2px 0px #000;
+  -webkit-box-shadow: 0px 0px 5px 5px #f2f2f2;
+          box-shadow: 0px 0px 5px 5px #f2f2f2;
   text-align: center;
+}
+
+.outer-container .inner-container .heading-title {
+  font-weight: 600;
+  font-size: 22px;
+  margin: 0 0 20px;
+}
+
+.outer-container .inner-container .main-pic {
+  font-size: 55px;
 }
 
 .outer-container .fa {
@@ -45,27 +56,52 @@ body {
   outline: 0;
   border: 0;
   display: block;
-  margin: 10px auto;
-  padding: 10px 30px;
+  margin: 25px auto 35px;
+  padding: 10px 40px;
   border-radius: 50px;
   cursor: pointer;
+  font-size: 18px;
 }
 
 .outer-container #name, .outer-container #number {
   width: 100%;
-  padding: 5x 10px;
-  height: 30px;
+  padding: 5px 10px;
+  height: 40px;
   margin: 5px 0;
   border-radius: 50px;
-  border-color: #080808;
+  border: 1px solid darkgrey;
   outline: 0;
 }
 
 .outer-container .list {
   background-color: #fff;
-  padding: 5px 0px;
-  -webkit-box-shadow: 0px 2px 3px 0 #000;
-          box-shadow: 0px 2px 3px 0 #000;
+  padding: 0 15px 10px;
+  -webkit-box-shadow: 0px 4px 6px 3px #5555556e;
+          box-shadow: 0px 4px 6px 3px #5555556e;
+  overflow-y: scroll;
+  max-height: 225px;
+  border-radius: 8px;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+.outer-container .list::-webkit-scrollbar {
+  width: 7px;
+}
+
+.outer-container .list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.outer-container .list::-webkit-scrollbar-thumb {
+  background: #ff7f50c9;
+  border-radius: 25px;
+}
+
+.outer-container .list::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .outer-container ul {
@@ -75,9 +111,25 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+  padding: 0 15px 15px;
 }
 
 .outer-container ul li {
   list-style: none;
+}
+
+.outer-container ul li .fa {
+  font-size: 22px;
+}
+
+.outer-container ul li .fa.fa-plus {
+  -webkit-transform: rotate(43deg);
+          transform: rotate(43deg);
 }
 /*# sourceMappingURL=style.css.map */

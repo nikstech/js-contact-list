@@ -9,7 +9,7 @@ for(let i=0; i< contacts.length; i++){
     result += `
     <ul> 
         <li><i class="fa fa-user"></i></li>
-        <li><span class="name">${contacts[i].name}</span><br><span class="number">${contacts[i].number}</span></li>
+        <li style="min-width:200px;text-transform: capitalize;"><span class="name">${contacts[i].name}</span><br><span class="number">${contacts[i].number}</span></li>
         <li><i class="fa fa-plus" onClick="deletecont('${contacts[i].id}')"></i></li>
     </ul> 
         `   
